@@ -1,13 +1,13 @@
 #!/usr/bin/env bb
 ;; 樋 toi — analyze/routing/datoms tests (incl. constitutional invariants).
-;; Run:  bb --classpath 20-actors 20-actors/toi/methods/test_analyze.cljc
+;; Run:  bb --classpath src:test test/toi/methods/test_analyze.cljc
 (ns toi.methods.test-analyze
   (:require [toi.methods.toi-edn :as te]
             [toi.methods.analyze :as a]
             [clojure.string :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/toi/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 (defn- jobs [] (te/jobs seed-path))
 (defn- sites [] (te/sites seed-path))
 (defn- site [id] (first (filter #(= id (:id %)) (sites))))

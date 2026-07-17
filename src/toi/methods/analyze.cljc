@@ -250,7 +250,7 @@
 
 #?(:clj
    (defn -main [& args]
-     (let [seed (or (first args) "20-actors/toi/kotoba/seed.edn")
+     (let [seed (or (first args) "kotoba/seed.edn")
            ;; te/jobs+te/sites tolerate both the legacy bare-map seed.edn
            ;; shape and the datomized tx-data shape (single reconstitution
            ;; point — see toi.methods.toi-edn/classify).

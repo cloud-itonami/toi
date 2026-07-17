@@ -1,11 +1,11 @@
 #!/usr/bin/env bb
 ;; 樋 toi — seed loader tests.
-;; Run:  bb --classpath 20-actors 20-actors/toi/methods/test_toi_edn.cljc
+;; Run:  bb --classpath src:test test/toi/methods/test_toi_edn.cljc
 (ns toi.methods.test-toi-edn
   (:require [toi.methods.toi-edn :as te]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/toi/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 
 (deftest loads-jobs-and-sites
   (is (>= (count (te/jobs seed-path)) 6) "≥6 jobs")

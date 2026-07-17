@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; 樋 toi — heartbeat (idempotent-by-content) tests.
-;; Run:  bb --classpath 20-actors 20-actors/toi/methods/test_autorun.cljc
+;; Run:  bb --classpath src:test test/toi/methods/test_autorun.cljc
 (ns toi.methods.test-autorun
   (:require [toi.methods.toi-edn :as te]
             [toi.methods.autorun :as ar]
@@ -8,8 +8,8 @@
             [clojure.java.io :as io]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/toi/kotoba/seed.edn")
-(def ^:private tmp "20-actors/toi/data/test-autorun.kotoba.edn")
+(def seed-path "kotoba/seed.edn")
+(def ^:private tmp "data/test-autorun.kotoba.edn")
 (defn- clean! [] (let [f (io/file tmp)] (when (.exists f) (.delete f))))
 (defn- jobs [] (te/jobs seed-path))
 (defn- sites [] (te/sites seed-path))

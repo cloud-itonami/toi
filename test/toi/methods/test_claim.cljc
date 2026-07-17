@@ -1,12 +1,12 @@
 #!/usr/bin/env bb
 ;; 樋 toi — claim-emitter tests (the 澪 mio seam shape).
-;; Run:  bb --classpath 20-actors 20-actors/toi/methods/test_claim.cljc
+;; Run:  bb --classpath src:test test/toi/methods/test_claim.cljc
 (ns toi.methods.test-claim
   (:require [toi.methods.toi-edn :as te]
             [toi.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/toi/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 (defn- claims [] (c/from-nodes (te/jobs seed-path) (te/sites seed-path)))
 
 (deftest claim-shape-has-five-verification-facts
