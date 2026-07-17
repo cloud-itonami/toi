@@ -7,7 +7,7 @@
             [clojure.string :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/toi/kotoba/seed.edn")
 (defn- jobs [] (te/jobs seed-path))
 (defn- sites [] (te/sites seed-path))
 (defn- site [id] (first (filter #(= id (:id %)) (sites))))

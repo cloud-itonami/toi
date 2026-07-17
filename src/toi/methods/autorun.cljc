@@ -35,7 +35,7 @@
 
 #?(:clj
    (defn -main [& args]
-     (let [seed (or (first args) "kotoba/seed.edn")
+     (let [seed (or (first args) "resources/toi/kotoba/seed.edn")
            log-path (or (second args)
                         (-> (clojure.java.io/file *file*) .getParentFile .getParentFile
                             (clojure.java.io/file "data" "persisted" "toi.routings.kotoba.edn") str))

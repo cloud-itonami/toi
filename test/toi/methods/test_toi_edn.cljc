@@ -5,7 +5,7 @@
   (:require [toi.methods.toi-edn :as te]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/toi/kotoba/seed.edn")
 
 (deftest loads-jobs-and-sites
   (is (>= (count (te/jobs seed-path)) 6) "≥6 jobs")

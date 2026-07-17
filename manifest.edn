@@ -44,8 +44,8 @@
   {:lex/id "routingPlan"}]
 
  :actor/seed
- {:seed/file "kotoba/seed.edn"
-  :seed/ontology "kotoba/ontology.toi.edn"
+ {:seed/file "resources/toi/kotoba/seed.edn"
+  :seed/ontology "resources/toi/kotoba/ontology.toi.edn"
   :seed/sourcing :representative
   :seed/job-classes [:batch-inference :training :render :backup :indexing]
   :seed/site-classes [:murakumo :donated-mesh :commercial-gpu]}

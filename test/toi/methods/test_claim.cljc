@@ -6,7 +6,7 @@
             [toi.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/toi/kotoba/seed.edn")
 (defn- claims [] (c/from-nodes (te/jobs seed-path) (te/sites seed-path)))
 
 (deftest claim-shape-has-five-verification-facts

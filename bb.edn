@@ -1,1 +1,1 @@
-{:paths ["src" "test"] :tasks {:test {:task (shell "./run_tests.sh")}}}
+{:paths ["src" "test" "resources"] :tasks {:test {:task (shell "./run_tests.sh")}}}
