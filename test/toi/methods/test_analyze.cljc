@@ -4,7 +4,7 @@
 (ns toi.methods.test-analyze
   (:require [toi.methods.toi-edn :as te]
             [toi.methods.analyze :as a]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
 (def seed-path "resources/toi/kotoba/seed.edn")

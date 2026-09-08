@@ -2,7 +2,7 @@
 ;; 樋 toi — claim-emitter tests (the 澪 mio seam shape).
 ;; Run:  bb --classpath src:test test/toi/methods/test_claim.cljc
 (ns toi.methods.test-claim
-  (:require [toi.methods.toi-edn :as te]
+  (:require [kotoba.lang.text] [toi.methods.toi-edn :as te]
             [toi.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
@@ -15,7 +15,7 @@
     (is (= "toi" (:source-actor cl)))
     (is (= :compute-routing (:flow-class cl)))
     (is (and (number? (:order-delta-kwh cl)) (pos? (:order-delta-kwh cl))) (str (:id cl) " carries routed kWh"))
-    (is (not (clojure.string/blank? (:baseline-method cl))))
+    (is (not (kotoba.lang.text/blank? (:baseline-method cl))))
     (is (and (>= (:additionality cl) 0.0) (<= (:additionality cl) 1.0)))
     (is (keyword? (:measurement-source cl)))
     (is (string? (:double-count-key cl)))
