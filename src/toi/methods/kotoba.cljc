@@ -7,7 +7,7 @@
   transactions. prev-cid chaining makes the log tamper-evident (verify-chain).
   Deterministic. No-server-key: appends to a local file only. A routing map, never
   a forced dispatch."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])))
 
 (defn add [entity attr value] [":db/add" entity attr value])

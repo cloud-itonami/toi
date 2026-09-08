@@ -19,7 +19,7 @@
         actuate). A non-movable job is never coerced; it stays in-place.
     G2  Murakumo is default-preferred — a clean Murakumo site outscores a commercial-GPU
         site, which is only ever a fallback (and unused while clean capacity exists)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [toi.methods.toi-edn :as te])))
 
 ;; ── route params ─────────────────────────────────────────────────────────────
