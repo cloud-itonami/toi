@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 樋 toi — seed loader + classifier (clj-native, pure stdlib).
 (ns toi.methods.toi-edn
   "樋 toi — load + classify the compute seed substrate into jobs + sites.

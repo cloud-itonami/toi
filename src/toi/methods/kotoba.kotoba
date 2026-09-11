@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 樋 toi — routing-ledger kotoba Datom-log writer (content-addressed).
 (ns toi.methods.kotoba
   "kotoba.cljc — 樋 toi append-only COMPUTE ROUTING LEDGER writer (on ADR-2605262130

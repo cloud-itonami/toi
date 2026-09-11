@@ -36,8 +36,8 @@ Routed savings (avoided carbon, reusable heat) become 澪 mio flow-improvement c
 
 ```bash
 ./20-actors/toi/run_tests.sh                                   # 21 tests / 98 assertions
-bb --classpath 20-actors 20-actors/toi/methods/analyze.cljc    # render the compute routing map
-bb --classpath 20-actors 20-actors/toi/methods/autorun.cljc    # one heartbeat → append (idempotent-by-content)
+kbb --classpath 20-actors 20-actors/toi/methods/analyze.cljc    # render the compute routing map
+kbb --classpath 20-actors 20-actors/toi/methods/autorun.cljc    # one heartbeat → append (idempotent-by-content)
 ```
 
 OBSERVATION ONLY. A routing map, **never a forced job-kill**.

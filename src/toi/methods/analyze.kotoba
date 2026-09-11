@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 樋 toi — analyze → datoms → coverage (clj-native, pure stdlib).
 (ns toi.methods.analyze
   "樋 toi — the Compute-as-Thermal-Routing core (Energy Order Protocol).
