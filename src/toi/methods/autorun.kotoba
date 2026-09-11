@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 樋 toi — autonomous heartbeat: route → append routings to the ledger.
 (ns toi.methods.autorun
   "autorun.cljc — 樋 toi deterministic, idempotent-by-content heartbeat

@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 樋 toi — analyze/routing/datoms tests (incl. constitutional invariants).
-;; Run:  bb --classpath src:test test/toi/methods/test_analyze.cljc
+;; Run:  kbb --classpath src:test test/toi/methods/test_analyze.cljc
 (ns toi.methods.test-analyze
   (:require [toi.methods.toi-edn :as te]
             [toi.methods.analyze :as a]

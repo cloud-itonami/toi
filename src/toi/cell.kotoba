@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 樋 toi — cell entry (kotodama cell-runner contract, ADR-2605192415 §7.1).
 (ns toi.cell
   "樋 toi cell entry — kotodama-cell-runner contract (ADR-2605192415 §7.1).

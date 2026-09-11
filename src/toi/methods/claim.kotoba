@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 樋 toi — claim emitter (the 澪 mio suite seam).
 (ns toi.methods.claim
   "claim.cljc — 樋 toi → 澪 mio flow-improvement CLAIM emitter (Energy Order Protocol

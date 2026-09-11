@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 樋 toi — routing-ledger (content-addressed commit-DAG) tests.
-;; Run:  bb --classpath src:test test/toi/methods/test_kotoba.cljc
+;; Run:  kbb --classpath src:test test/toi/methods/test_kotoba.cljc
 (ns toi.methods.test-kotoba
   (:require [toi.methods.kotoba :as k]
             [clojure.java.io :as io]

@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 樋 toi — claim-emitter tests (the 澪 mio seam shape).
-;; Run:  bb --classpath src:test test/toi/methods/test_claim.cljc
+;; Run:  kbb --classpath src:test test/toi/methods/test_claim.cljc
 (ns toi.methods.test-claim
   (:require [kotoba.lang.text] [toi.methods.toi-edn :as te]
             [toi.methods.claim :as c]
