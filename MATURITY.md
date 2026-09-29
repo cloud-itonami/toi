@@ -17,7 +17,7 @@ Actor: **樋 toi** · ADR-2606211200 · status **R0** · suite **Energy Order Pr
 - [x] test_autorun.cljc (idempotent-by-content)
 - [x] run_tests.sh (babashka) — **21 tests / 98 assertions green**
 - [x] README.md
-- [x] CLAUDE.md (actor-local invariants)
+- [x] AGENTS.md (actor-local invariants)
 - [x] G2 proven: Murakumo outscores commercial GPU; commercial GPU unused while clean capacity exists
 
 ## Seed routing result (current)
